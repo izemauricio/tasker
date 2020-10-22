@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="login.css" type="text/css" />
+	<script src="login.js"></script>
+	<title>Login Page</title>
+</head>
+
+<body onload="errors()">
+	<div id="login-box">
+		<div id="title">Please sign in</div>
+		<div id="error1" style="display:none;">Incorrect email or password. Please try again.</div>
+		<div id="error2" style="display:none;">Logout done.</div>
+		<form action="LoginServlet" method="POST">
+			<input id="edit" type="text" name="username" placeholder="Username" value="" onfocus="loginfocus(this)" onfocusout="loginfocusout(this)" />
+			<input id="edit" type="text" name="password" placeholder="Password" value="" onfocus="passwordfocus(this)" onfocusout="passwordfocusout(this)" />
+			<input id="button" type="submit" value="Sign In">
+		</form>
+	</div>
+</body>
+
+</html>
